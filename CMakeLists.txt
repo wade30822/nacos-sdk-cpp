@@ -57,7 +57,7 @@ find_package(Threads REQUIRED)
 find_package(CURL REQUIRED)
 find_package(ZLIB REQUIRED)
 
-install(TARGETS nacos-cli
+install(TARGETS nacos-cli nacos-cli-static
 		LIBRARY DESTINATION lib)
 
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/include/
