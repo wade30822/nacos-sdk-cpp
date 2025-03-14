@@ -51,7 +51,7 @@ add_library(nacos-cli-static STATIC ${SRCS_DIRS})
 
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 target_link_libraries(nacos-cli PRIVATE Threads::Threads curl z)
-target_link_libraries(nacos-cli-static PRIVATE Threads::Threads curl z)
+target_link_libraries(nacos-cli-static PRIVATE Threads::Threads curl ssl crypto z)
 target_link_libraries(nacos-cli.out PRIVATE Threads::Threads curl z)
 find_package(Threads REQUIRED)
 find_package(CURL REQUIRED)
